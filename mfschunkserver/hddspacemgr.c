@@ -3756,7 +3756,7 @@ int hdd_init(void) {
 
 	fd = fopen(hddfname,"r");
 	if (!fd) {
-		mfs_arg_errlog(LOG_ERR,"hdd space manager: can't open configuration %s", hddfname);
+		mfs_arg_errlog(LOG_ERR,"hdd space manager: can't open configuration file '%s'", hddfname);
 		free(hddfname);
 		return -1;
 	}
